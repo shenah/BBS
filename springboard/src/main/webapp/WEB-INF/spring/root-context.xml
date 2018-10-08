@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!--모든 곳에서 사용할 bean을 설정하는 파일-->
+	
+	<!-- 오라클 접속정보 -->
+	<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		id="dataSource">
+		<property value="oracle.jdbc.driver.OracleDriver"
+			name="driverClassName" />
+		<property value="jdbc:oracle:thin:@192.168.0.101:1521:xe"
+			name="url" />
+		<property value="user03" name="username" />
+		<property value="user03" name="password" />
+	</bean>
+	
+		
+</beans>
