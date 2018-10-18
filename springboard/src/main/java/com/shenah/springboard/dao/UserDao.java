@@ -27,4 +27,9 @@ public class UserDao {
 	public void register(User user) {
 		sqlSession.selectOne("user.register", user);
 	}
+	
+	//로그인 메소드 
+	public User login(String email) {
+		return sqlSession.selectOne("user.login", email);
+	}
 }

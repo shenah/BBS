@@ -1,6 +1,10 @@
 package com.shenah.springboard.Service;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.web.multipart.MultipartHttpServletRequest;
+
+import com.shenah.springboard.domain.User;
 
 public interface UserService {
 
@@ -9,4 +13,7 @@ public interface UserService {
 	
 	//회원가입 메소드 
 	public void register(MultipartHttpServletRequest request);
+	
+	//로그인 메소드 
+	public User login(HttpServletRequest request);
 }

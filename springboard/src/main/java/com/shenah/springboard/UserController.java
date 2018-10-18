@@ -1,5 +1,8 @@
 package com.shenah.springboard;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +12,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.shenah.springboard.Service.UserService;
+import com.shenah.springboard.domain.User;
 
 @Controller
 public class UserController {
@@ -33,7 +37,27 @@ public class UserController {
 		return "redirect:/";
 	}
  
+	@RequestMapping(value = "user/login", method= RequestMethod.GET)
+	public void login(Model model) {
+		
+	}
 	
+	@RequestMapping(value = "user/login", method= RequestMethod.POST)
+	public String login(HttpServletRequest request, HttpSession session, RedirectAttributes attr) {
+		User user = userService.login(request);
+		if(user == null) {
+			session.setAttribute("user", null);
+			attr.addAttribute("msg", "없는 비밀번호이거나 잘못된 비밀번호입니다.");
+			return "redirect:login";
+		}else {
+			session.setAttribute("user", user);
+			return "redirect:../";
+		}
+	}
 	
+	@RequestMapping(value = "user/logout", method= RequestMethod.GET)
+	public void logout(Model model) {
+		
+	}
 	
 }
