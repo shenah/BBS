@@ -7,11 +7,10 @@
 	     web event: 애플리케이션의 시작과 종료, 세션의 생성과 소멸
 	     Spring MVC 설정: WEB-INF 디렉토리에 있는 applicationContext.xml 파일을 찾아서 bean 
 		전부 전역객체로 생성하도록 하는 설정입니다.  -->
-	<!-- 모든 곳에서 사용할 수 있는 bean을 WEB-INF/spring/root-Context.xml 파일에 만드는 설정 -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	
+	<!-- 모든 곳에서 사용할 수 있는 bean을 WEB-INF/spring/root-Context.xml 파일에 만드는 설정 -->
 	<!-- applicationContext.xml 파일의 경로를 변경하는 설정 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>

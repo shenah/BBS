@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- Spring MVC 프로젝트의 50여 가지 설정을 해즈는 태그 -->
+	<!-- Spring MVC 프로젝트의 50여 가지 설정을 해주는 태그 -->
 	<annotation-driven />
 
 	<!-- 외부 리소스 파일의 경로를 설정하는 옵션 -->
