@@ -65,6 +65,7 @@ public class UserServiceImpl implements UserService {
 		String pw = request.getParameter("pw");
 		
 		User user = userDao.login(email);
+		//회원이 가입 여부 
 		if(user != null) {
 			//비밀번호 확인 
 			if (BCrypt.checkpw(pw, user.getPw())) {

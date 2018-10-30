@@ -31,8 +31,8 @@
 				buttons : {
 					"닫기" : function() {
 						$(this).dialog("close");
-					},
-				}
+					}
+				},
 			});
 		});
 	</script>
