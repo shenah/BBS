@@ -12,7 +12,9 @@
 			</c:if>
 			<c:if test="${user != null}">
 				<a href="${pageContext.request.contextPath}/user/logout"><h3
-						class="box-title">로그아웃</h3></a>
+						class="box-title">로그아웃</h3></a>					
+				<a href="${pageContext.request.contextPath}/board/write"><h3
+						class="box-title">게시글 작성</h3></a>
 			</c:if>
 		</div>
 	</div>

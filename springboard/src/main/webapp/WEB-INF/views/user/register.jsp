@@ -9,7 +9,7 @@
 		<p align="center">
 		<table border="1" width="50%" height="80%" align='center'>
 			<tr>
-				<td colspan="3" align="center"><h2>회원 가입</h2></td>
+				<td colspan="3" align="center"><h2>회원가입</h2></td>
 			</tr>
 			<tr>
 				<td rowspan="5" align="center">

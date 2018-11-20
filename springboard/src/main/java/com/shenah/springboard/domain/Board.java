@@ -18,6 +18,7 @@ public class Board {
 	//작성일을 출력할 때는 regdate를 출력하는 것이 아니고 
 	//오늘 작성된 글이면 시간을 이전에 작성될 글은 날짜를 출력 
 	private String dispdate;
+	
 	public int getBno() {
 		return bno;
 	}

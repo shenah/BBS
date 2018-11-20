@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.shenah.springboard.Service.UserService;
 
 //요청을 받아서 결과를 JSON으로 리턴해 줄 수 있는 JSONController 
-//ajax는 JSON, XML파일를 받기에 ajax로 아이디 중복 검사하기 위하여 JSON으로 리턴 
+//ajax는 JSON, XML파일를 받기에 p아이디 중복 검사하기 위하여 JSON으로 리턴 
 
 @RestController
 public class JSONController {

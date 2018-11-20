@@ -15,7 +15,7 @@
  	</insert>
  	
  	<!-- 로그인을 위한 SQL -->
- 	<!-- 입력받을 것: 이메일 비밀번호(비밀번호는 암호화 되어있어 비교할 수 
+ 	<!-- 입력받을 것: 이메일 비밀번호(비밀번호는 암호화 되어있어 비교할 수 없다)
  		  돌려줄 것: email, pw, nickname, image -->
  	<select id="login" parameterType="java.lang.String" resultType ="User" >
  		select email, pw, nickname, image from springuser where email=#{email}
